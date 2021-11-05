@@ -1,0 +1,71 @@
+<div class="container">
+
+
+  <div class=formulario>
+
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+      <h2>Faça seu Cadastro</h2>
+      <div>
+         <!-- <label for="email">E-mail:</label> --> <br>
+         <input id="email" name="email" placeholder="  E-mail" ngModel type="text" required>
+      </div><br>
+
+      <div>
+         <input id="senha" name="senha" placeholder="  Senha" ngModel type="password" required [type]="hide ? 'password':'text'">
+
+         <span class="material-icons" matSuffix (click) ="hide = !hide">
+          {{hide ? 'visibility':'visibility_off'}}
+          </span>
+
+      </div><br>
+
+      <div class="termos">
+        <mat-checkbox color="primary"></mat-checkbox> <p> Eu concordo com os <a href="#">Termos e Condições de Uso do<br>PapoCast</a></p>
+      </div>
+
+      <div class="botao">
+         <button type="submit" class="botao-entrar" [routerLink]="['podcasts']" >Cadastre-se</button>
+
+
+      </div>
+   </form><br>
+
+
+
+    <!-- <button type="submit" class="botao-entrar" [disabled]="f.form.invalid">Cadastre-se</button> -->
+
+    <!-- FORMULÁRIO ANTIGO
+    [routerLink]="['podcasts']
+    -->
+
+    <!-- <form>
+      <h2>Faça seu Cadastro</h2><br>
+      <div class="form-group">
+
+        <input type="email" class="login-email" placeholder="  E-mail">
+      </div><br>
+      <div class="form-group">
+        <input type="password" class="login-senha" placeholder="  Senha">
+      </div><br> -->
+
+
+      <!-- </form> -->
+
+         <!-- <mat-icon matSuffix (click)="verSenha()">{{pas}}</mat-icon>
+         <input type="{{typePass}}" placeholder="Senha" id="pass"> -->
+
+
+
+  <hr size = 2>
+  <hr width = 360px>
+
+  <div class="faca_cadastro" [routerLink]="['']">
+    <h3>Faça login </h3> <mat-icon class="setinha">arrow_left</mat-icon>
+
+  </div>
+
+
+
+
+
+

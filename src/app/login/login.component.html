@@ -1,0 +1,66 @@
+<div class="container">
+
+
+<div class=formulario>
+
+  <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <h2>Faça seu Login</h2>
+    <div>
+      <br>
+       <input id="email" name="email" placeholder="  E-mail" ngModel type="text" required>
+    </div>
+
+    <div>
+      <br>
+      <span class="material-icons" matSuffix (click) ="hide = !hide">
+        {{hide ? 'visibility':'visibility_off'}}
+        </span></div>
+      <div>
+      <input id="senha" name="senha" placeholder="  Senha" ngModel type="password" required [type]="hide ? 'password':'text'">
+      </div>
+       <div>
+
+    </div>
+
+
+    <div><br>
+       <!-- <button type="submit" class="botao-entrar" [disabled]="f.form.invalid">Entrar</button> -->
+       <button type="submit" class="botao-entrar" [routerLink]="['podcasts']">Entrar</button>
+    </div>
+ </form>
+
+ <div class="rodape">
+</div>
+
+
+  <!-- <form>
+    <h2>Faça Login</h2><br>
+    <div class="form-group">
+
+      <input type="email" class="login-email" placeholder="  E-mail">
+    </div><br>
+    <div class="form-group">
+      <input type="password" class="login-senha" placeholder="  Senha">
+    </div><br>
+       <button type="submit" class="botao-entrar">Entrar</button>
+  </form> -->
+
+
+<hr size = 2>
+<hr width = 330px>
+
+<div class="faca_cadastro" [routerLink]="['cadastro']">
+
+<h3>Faça seu cadastro </h3>
+<mat-icon> arrow_right</mat-icon>
+
+</div>
+
+
+</div>
+
+<img class="foto-login" src="/assets/imgs/foto_login.png">
+
+</div>
+
+

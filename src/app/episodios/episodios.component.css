@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+table{
+  width: 700px;
+}
+
+hr{
+  color: #ABA8B2;
+  width: 760px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+
+}
+
+
+h1{
+  font-family: 'Roboto Condensed';
+  font-size: 16pt;
+  margin-left: -50px;
+  margin-bottom: 50px;
+}
+
+td{
+  font-family: 'Roboto Condensed';
+  color: #ABA8B2;
+  font-size: 9pt;
+  font-weight: 400, lighter;
+}
+
+.titulo-tabela{
+  margin-left: -50px;
+}
+
+.titulo-tabela #papodcast{
+  padding-right:160px;
+  padding-left: -120px;
+}
+
+.titulo-tabela #apresentado, #data, #duracao{
+  padding-right: 10px;
+  padding-left: 85px;
+}
+
+.lista-episodios{
+  margin-left: -50px;
+  /* padding-left:50px; */
+  padding-top: 0px;
+}
+
+.titulo-tabela #duracao{
+  margin-left: -10px;
+}
